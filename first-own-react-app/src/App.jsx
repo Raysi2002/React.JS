@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Own from './Own'
 
 function App() {
