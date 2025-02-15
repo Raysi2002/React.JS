@@ -1,13 +1,13 @@
 function DeleteTodo() {
     return (
-        <div class="container text-center">
+        <div id="content" class="container">
             <div class="row">
-                <div class="col">
+                <div id="text" class="col">
                     Learn React
                 </div>
-                <div class="col-md-auto">
+                <div id="date" class="col-md-auto">
                     12/1/2002</div>
-                <div class="col col-lg-2">
+                <div className="col col-lg-2">
                     <button class="btn btn-danger">Delete</button>
                 </div>
             </div>
