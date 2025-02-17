@@ -4,9 +4,9 @@ function App() {
 
   return <>
     <h1>Things to Achieve</h1>
-    <ul class="list-group">
+    <ul className="list-group">
       {
-        listItems.map(item => <li class="list-group-item active">{item}</li> )
+        listItems.map(item => <li key={item} className="list-group-item active">{item}</li> )
       }
     </ul>
   </>
