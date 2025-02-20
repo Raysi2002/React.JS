@@ -1,0 +1,47 @@
+.calculatorApp{
+    border: 1px solid rgba(0, 0, 0, 0.594);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.calculatorApp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-right: 5px;
+}
+
+.heading{
+    text-align: center;
+}
+
+#display{
+    height: 3rem;
+    width: 100%;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.calciApp {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 220px;
+    margin: auto;
+    width: fit-content;
+}
+.equal {
+    grid-row: span 2;
+    height: 110px; /* 2 times the normal button height + gap */
+}
+
+.button{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: 0px transparent;
+    cursor: pointer;
+}
