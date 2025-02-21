@@ -1,0 +1,10 @@
+.calculatorApp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid sandybrown;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 1px 2px 1px black;
+}
