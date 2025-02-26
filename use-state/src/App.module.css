@@ -1,0 +1,17 @@
+.app{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid orange;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px 1px gold;
+}
+
+.heading{
+    text-align: center;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
