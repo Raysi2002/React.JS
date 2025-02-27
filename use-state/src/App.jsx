@@ -23,13 +23,15 @@ function App() {
     setFoodItems(foodItems.filter(item => item !== itemToDelete))
   }
 
-  if (foodItems.length === 0) return <ErrorMessage />;
+
 
   return (
     <div className={css.app}>
       <h1 className={css.heading}>Food List</h1>
       <Input value={item} onChange={handleInputChange} onKeyPress={handleKeyPress} />
-      <List foodList={foodItems} onDelete = {handleDelete}/>
+      {
+        foodItems.length == 0 ? <ErrorMessage /> : <List foodList={foodItems} onDelete={handleDelete} />
+      }
     </div>
   );
 }
