@@ -3,11 +3,11 @@ import Input from "./Input"
 import DeleteBtn from "./DeleteBtn";
 
 
-const List = ({foodList, handleClick}) => {
+const List = ({foodList, handleClick, onDelete}) => {
     return (
         <ul className="list-group">
             {
-                foodList.map(item => <li onClick={() => handleClick} key={item} id="listItem" className="list-group-item">{item} <DeleteBtn /> </li>)
+                foodList.map(item => <li onClick={() => handleClick}  key={item} id="listItem" className="list-group-item">{item} <DeleteBtn onClick = {() => onDelete(item)} /> </li>)
             }
         </ul>
     )

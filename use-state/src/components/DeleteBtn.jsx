@@ -1,8 +1,8 @@
 import css from "./DeleteBtn.module.css"
 
-const DeleteBtn = () => {
+const DeleteBtn = ({onClick}) => {
     return (
-        <button id={css.deleteBtn} className="btn btn-primary"> Delete </button>
+        <button onClick={onClick} id={css.deleteBtn} className="btn btn-primary"> Delete </button>
     )
 }
 
